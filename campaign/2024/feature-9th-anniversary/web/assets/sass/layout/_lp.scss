@@ -1,0 +1,1113 @@
+@charset "UTF-8";
+
+$mv_bg_color: #bf1818;
+$title_color: #ef2546;
+$sub_title_color: #ffffff;
+$sub_season_title_color: #e04444;
+$sub_season_background_color: #fde5cb;
+$border-dot-color: #753e75;
+$season-color: #00b7ce;
+
+/* ------------ common ------------ */
+
+.text-center {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.sp_br {
+  display: none;
+}
+
+.pc_br {
+  display: inline;
+}
+
+.snow_break {
+  margin: 24px auto;
+  width: 1080px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.font_bold {
+  font-weight: bold;
+}
+
+.indent {
+  margin-left: 1em;
+  color: #5a5a5a;
+  font-weight: normal;
+}
+
+h2 {
+  font: "Hiragino Maru Gothic StdN";
+  letter-spacing: 0px;
+  font-weight: normal;
+}
+
+/* ------------ kv ------------ */
+
+#kv {
+  margin: 0 auto;
+  position: relative;
+  width: 1080px;
+  z-index: 1;
+  font-size: 0;
+}
+
+#kv_sub {
+  margin: 0 auto;
+  margin-top: 36px;
+  position: relative;
+  width: 1080px;
+  z-index: 1;
+  font-size: 0;
+}
+
+.kv_genre_title {
+  color: #e04444;
+  font-family: "Hiragino Maru Gothic Std";
+  font-size: 24px;
+  letter-spacing: 0px;
+  margin: 60px 0 24px 0;
+  text-align: center;
+}
+
+#target_genre {
+  margin: 24px auto 54px auto;
+  text-align: center;
+  position: relative;
+  width: 950px;
+  z-index: 1;
+  font-size: 0;
+}
+
+p span {
+  font-family: メイリオ;
+  color: #fe6161;
+  font-weight: bold;
+}
+
+.kv_back {
+  margin-top: 25px;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.kv_main,
+.kv_sub {
+  position: relative;
+}
+
+#kv {
+  h1 {
+    color: #235fc1;
+    font-weight: bold;
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+      "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+      "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+    font-size: 25px;
+    margin: 60px 0 24px 0;
+    text-align: center;
+  }
+
+  .kv_genre {
+    display: block;
+    margin: 0 auto 54px;
+  }
+}
+
+/* ------------ section01 ------------ */
+
+#section1 {
+  margin: 0 auto 54px;
+  width: 1080px;
+  position: relative;
+
+  h2 {
+    font-size: 24px;
+    color: $sub_season_title_color;
+    text-align: center;
+  }
+
+  img {
+    margin: 0 27px 0 0;
+  }
+
+  picture:last-child img {
+    margin: 0;
+  }
+
+  .section1_btn {
+    text-align: center;
+    background: #235fc1;
+    width: 260px;
+    margin: 0 auto 0;
+    border-radius: 6px;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 54px;
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 9px 0;
+
+      &:after {
+        content: ">";
+        font-size: 20px;
+      }
+    }
+  }
+
+  .section1_sp_prize_field {
+    font-size: 0;
+  }
+}
+
+/* ------------ genre_wrap ------------ */
+
+.genre_wrap {
+  width: 100%;
+  margin: auto;
+  background: #f9f7e7 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+}
+
+.genre_wrap_h2 {
+  background: linear-gradient(transparent 60%, sub_season_background_color 40%);
+  color: $sub_season_title_color;
+  font-family: "ヒラギノ丸ゴ StdN", "W6";
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 230px;
+}
+
+.title_sub_h2 {
+  background: linear-gradient(
+    transparent 60%,
+    $sub_season_background_color 40%
+  );
+  color: $sub_season_title_color;
+  font-family: "ヒラギノ丸ゴ StdN", "W6";
+  font-size: 28px;
+  margin: 0 auto;
+  text-align: center;
+  width: 308px;
+}
+
+.title_sub_h2_relax {
+  background: linear-gradient(
+    transparent 60%,
+    $sub_season_background_color 40%
+  );
+  color: $sub_season_title_color;
+  font-family: "ヒラギノ丸ゴ StdN", "W6";
+  font-size: 28px;
+  margin: 0 auto;
+  text-align: center;
+  width: 368px;
+}
+
+.genre_wrap_p2 {
+  font-family: "ヒラギノ丸ゴ StdN", "W6";
+  font-size: 18px;
+}
+
+/* ------------ app_download ------------ */
+
+.app_download {
+  margin-bottom: 54px;
+
+  .app_download_wrap {
+    width: 790px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 36px;
+    background: #f9f7e7 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    opacity: 1;
+    font-size: 0;
+    text-align: center;
+  }
+
+  .app_download_icon {
+    margin-top: 15px;
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        &:first-child {
+          margin-right: 24px;
+        }
+
+        &.qr_code {
+          margin-left: 45px;
+        }
+      }
+    }
+  }
+}
+
+/* ------------ section02 ------------ */
+
+#section2 {
+  opacity: 1;
+  box-sizing: border-box;
+  margin: 54px auto;
+  padding: 54px 0;
+  width: 1080px;
+  background: #f9f7e7 0% 0% no-repeat padding-box;
+
+  h2 {
+    background: linear-gradient(
+      transparent 60%,
+      $sub_season_background_color 40%
+    );
+    color: $sub_season_title_color;
+    font-family: "ヒラギノ丸ゴ StdN", "W6";
+    font-size: 28px;
+    margin: 0 auto;
+    text-align: center;
+    width: 182px;
+  }
+
+  .section2_jidououbo {
+    display: block;
+    margin: 24px auto 0 auto;
+  }
+
+  p {
+    color: #5a5a5a;
+    font-size: 18px;
+    line-height: 30.6px;
+    margin: 36px auto 0 auto;
+    width: 918px;
+
+    b {
+      color: #5a5a5a;
+    }
+  }
+
+  .section2_genre_field {
+    border-radius: 12px;
+    background-color: #fff;
+    opacity: 1;
+    margin: 15px auto 0 auto;
+    padding: 26.5px 0;
+    width: 918px;
+
+    .section3_genre_title {
+      display: block;
+      margin: 0 auto;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      margin: 24px auto;
+      padding-left: 61px;
+      padding-right: 62px;
+
+      li {
+        color: #fff;
+        cursor: default;
+        margin: 0 0 24 0;
+        font-family: "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN";
+        font-size: 16px;
+        height: 75px;
+        line-height: 20px;
+        text-align: center;
+        width: 795px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        svg {
+          padding: 0 0 6px;
+          width: 32px;
+          height: 32px;
+        }
+
+        &.takeout {
+          color: #ff2929;
+
+          svg {
+            fill: #ff2929;
+          }
+        }
+
+        &.sweets {
+          color: #c7000b;
+
+          svg {
+            fill: #c7000b;
+          }
+        }
+
+        &.dentist {
+          color: #61aa31;
+
+          svg {
+            fill: #61aa31;
+          }
+        }
+        &.hospital {
+          color: #f198ab;
+
+          svg {
+            fill: #f198ab;
+          }
+        }
+
+        &.relax {
+          color: #dc5519;
+
+          svg {
+            fill: #dc5519;
+          }
+        }
+
+        &.odekake {
+          color: #e73143;
+
+          svg {
+            fill: #e73143;
+          }
+        }
+
+        &.bone {
+          color: #138e91;
+
+          svg {
+            fill: #138e91;
+          }
+        }
+
+        &.medical {
+          color: #283f68;
+
+          svg {
+            fill: #283f68;
+          }
+        }
+
+        &.animal_hospital,
+        &.trimming {
+          color: #ff9900;
+        }
+
+        &.animal_hospital svg,
+        &.trimming svg {
+          fill: #ff9900;
+        }
+
+        &.beauty {
+          color: #e5375a;
+
+          svg {
+            fill: #e5375a;
+          }
+        }
+
+        &.gift {
+          color: #0188a5;
+
+          svg {
+            fill: #0188a5;
+          }
+        }
+
+        img {
+          padding: 12px 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+/* ------------ section03 ------------ */
+
+#section3 {
+  background: #f9f7e7 0% 0% no-repeat padding-box;
+  opacity: 1;
+  box-sizing: border-box;
+  margin: 54px auto;
+  padding: 54px 0;
+  width: 1080px;
+
+  h2 {
+    background: linear-gradient(
+      transparent 60%,
+      $sub_season_background_color 40%
+    );
+    color: $sub_season_title_color;
+    font-family: "ヒラギノ丸ゴ StdN", "W6";
+    font-size: 28px;
+    margin: 0 auto;
+    text-align: center;
+    width: 237px;
+  }
+
+  p {
+    color: #5a5a5a;
+    font-size: 18px;
+    line-height: 30.6px;
+    padding: 24px 81px 0;
+
+    b {
+      color: #5a5a5a;
+    }
+  }
+}
+
+/* ------------ section04 ------------ */
+
+#section4 {
+  background: #f9f7e7 0% 0% no-repeat padding-box;
+  opacity: 1;
+  box-sizing: border-box;
+  margin: 54px auto 54px;
+  padding: 54px 0px;
+  width: 1080px;
+
+  h2 {
+    background: linear-gradient(
+      transparent 60%,
+      $sub_season_background_color 40%
+    );
+    color: $sub_season_title_color;
+    font-family: "ヒラギノ丸ゴ StdN", "W6";
+    font-size: 28px;
+    margin: 0 auto;
+    text-align: center;
+    width: 308px;
+  }
+
+  p {
+    color: #5a5a5a;
+    font-size: 18px;
+    line-height: 30.6px;
+    padding: 24px 81px 0;
+  }
+}
+
+/* ------------ section05 ------------ */
+
+#section5 {
+  background: transparent
+    linear-gradient(0deg, $season-color 0%, $season-color 100%) 0% 0% no-repeat
+    padding-box;
+  height: 368px;
+  margin: 54px auto 0;
+
+  ul {
+    margin: 0 auto;
+    position: relative;
+    width: 1080px;
+
+    li {
+      &:nth-child(1) {
+        left: 90px;
+        position: absolute;
+        top: 54px;
+      }
+
+      &:nth-child(2) {
+        left: 90px;
+        position: absolute;
+        top: 228px;
+      }
+
+      &:nth-child(3) {
+        left: 313px;
+        position: absolute;
+        top: 228px;
+      }
+
+      &:nth-child(4) {
+        left: 558px;
+        position: absolute;
+        top: 200px;
+      }
+
+      &:nth-child(5) {
+        position: absolute;
+        right: 0px;
+        top: 18px;
+      }
+
+      &:nth-child(6) {
+        position: absolute;
+        right: 0px;
+        top: 15px;
+      }
+    }
+  }
+}
+
+/* ------------ section06 ------------ */
+
+#section6 {
+  background: #f9f7e7 0% 0% no-repeat padding-box;
+  opacity: 1;
+  box-sizing: border-box;
+  margin: 54px auto 54px;
+  padding: 54px 0px;
+  width: 1080px;
+
+  h2 {
+    background: linear-gradient(
+      transparent 60%,
+      $sub_season_background_color 40%
+    );
+    color: $sub_season_title_color;
+    font-family: "ヒラギノ丸ゴ StdN", "W6";
+    font-size: 28px;
+    margin: 0 auto;
+    text-align: center;
+    width: 308px;
+  }
+
+  p {
+    color: #5a5a5a;
+    font-size: 18px;
+    line-height: 30.6px;
+    padding: 24px 81px 0;
+  }
+}
+
+/* ------------ bannerarea ------------ */
+
+.banner_area {
+  display: block;
+  box-sizing: border-box;
+  margin: 54px auto;
+  width: 1080px;
+
+  p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: 5a5a5a;
+    margin: 0 0 24px 0;
+  }
+}
+
+.banner_field {
+  display: flex;
+  justify-content: center;
+
+  img {
+    margin: 0 30px;
+    width: 300px;
+    height: 100px;
+  }
+}
+
+/* ------------ successful_flow ------------ */
+.successful_flow {
+  opacity: 1;
+  box-sizing: border-box;
+  margin: 54px auto;
+  padding: 54px 0px;
+  width: 100%;
+}
+
+.successful_flow h2 {
+  background: linear-gradient(transparent 60%, $title_color 40%);
+  color: $sub_title_color;
+  font-family: "ヒラギノ丸ゴ StdN", "W6";
+  font-size: 28px;
+  margin: 0px auto 24px auto;
+  text-align: center;
+  width: 182px;
+}
+
+.successful_flow picture {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.successful_flow_image {
+  display: block;
+  margin: 6px auto 0;
+}
+
+.successful_flow_image_section2 {
+  display: block;
+  margin: 24px auto 0;
+}
+
+.successful_flow p {
+  top: 3620px;
+  left: 857px;
+  width: 252px;
+  height: 21px;
+  margin: 0 82px 0 auto;
+  text-align: right;
+  font: normal normal normal 14px/31px Meiryo;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+}
+
+/*---------------------------------------------
+SMARTPHONES SIZE
+----------------------------------------------*/
+@media screen and (max-width: 767px) {
+  /* ------------ common ------------ */
+
+  img {
+    max-width: 100%;
+  }
+
+  .sp_br {
+    display: inline;
+  }
+
+  .pc_br {
+    display: none;
+  }
+
+  .snow_break {
+    margin: 24 auto;
+    width: auto;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  /* ------------ kv ------------ */
+
+  .kv_back {
+    display: none;
+  }
+
+  #kv {
+    width: 100%;
+  }
+
+  .kv_main,
+  .kv_sub {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  #kv_sub {
+    width: 89%;
+    margin-top: 24px;
+    padding: 0 20px;
+  }
+
+  #target_genre {
+    margin: 36px auto;
+    width: 100%;
+  }
+
+  .kv_genre_title {
+    box-sizing: border-box;
+    margin: 36px auto;
+    padding: 0 20px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #kv .kv_genre {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  /* ------------ genre_wrap ------------ */
+  .genre_wrap_p2 {
+    font-family: "ヒラギノ丸ゴ StdN", "W6";
+    font-size: 14px;
+  }
+
+  /* ------------ section01 ------------ */
+
+  #section1 {
+    box-sizing: border-box;
+    margin: 36px auto;
+    width: 89%;
+
+    .section1_sp_prize_field {
+      box-sizing: border-box;
+      margin: 0px auto;
+      padding: 0px 0 0px;
+    }
+
+    h2 {
+      font-size: 15px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 30px;
+      width: 100%;
+    }
+
+    .section1_btn {
+      width: 250px;
+      font-size: 16px;
+      bottom: 30px;
+    }
+  }
+
+  /* ------------ app_download ------------ */
+
+  .app_download {
+    margin: 36px 0;
+
+    .app_download_wrap {
+      width: 89%;
+      margin-top: 20px;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+
+    .app_download_icon {
+      margin-top: 24px;
+
+      ul {
+        display: block;
+
+        li:first-child {
+          margin-right: 0;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+
+  /* ------------ section02 ------------ */
+
+  #section2 {
+    box-sizing: border-box;
+    margin: 36px auto;
+    padding: 30px 24px;
+    width: 89%;
+
+    h2 {
+      font-size: 22px;
+      width: 140px;
+    }
+
+    .section2_flag {
+      margin: 24px auto 0;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 23.8px;
+      margin: 24px auto 0;
+      width: 100%;
+    }
+
+    .section2_genre_field {
+      margin: 24px auto 0;
+      padding: 24px 0 9px;
+      width: 100%;
+      border-radius: 5px;
+
+      ul {
+        flex-wrap: wrap;
+        margin: 24px auto 0;
+        padding-left: 24px;
+        padding-right: 24px;
+
+        li {
+          font-size: 14px;
+          height: auto;
+          line-height: 14px;
+          margin: 0 8px 15px;
+          text-align: center;
+          width: 43%;
+
+          &:last-child {
+            margin-right: 8px;
+          }
+
+          img {
+            padding: 12px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* ------------ section03 ------------ */
+
+  #section3 {
+    box-sizing: border-box;
+    margin: 36px auto;
+    padding: 30px 24px;
+    width: 89%;
+
+    h2 {
+      font-size: 22px;
+      width: 190px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 23.8px;
+      margin: 0 auto;
+      padding: 24px 0 0;
+      width: 100%;
+
+      b {
+        color: #5a5a5a;
+      }
+    }
+  }
+
+  /* ------------ section04 ------------ */
+
+  #section4 {
+    margin: 36px auto 36px;
+    padding: 30px 24px;
+    width: 89%;
+
+    h2 {
+      font-size: 22px;
+      margin: 0 auto;
+      text-align: center;
+      width: 242px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 23.8px;
+      margin: 0 auto;
+      padding: 24px 0 0;
+      width: 100%;
+    }
+  }
+
+  /* ------------ section05 ------------ */
+
+  #section5 {
+    box-sizing: border-box;
+    height: auto;
+    margin: 36px auto 0;
+    padding: 30px 24px 24px;
+
+    ul {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+      position: relative;
+      width: 100%;
+
+      li {
+        &:nth-child(1) {
+          left: 0;
+          margin: 0 0 0 0;
+          order: 1;
+          position: relative;
+          top: 0;
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        &:nth-child(2) {
+          left: 0;
+          margin: 0 0.5% 0 0;
+          order: 3;
+          position: relative;
+          top: 0;
+          width: 49%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        &:nth-child(3) {
+          left: 0;
+          margin: 0 0 0 0.5%;
+          order: 4;
+          position: relative;
+          top: 0;
+          width: 49%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        &:nth-child(4) {
+          display: none;
+          left: 0;
+          position: relative;
+          top: 0;
+        }
+
+        &:nth-child(5) {
+          left: 0;
+          margin: 0 0 5px 0;
+          order: 2;
+          position: relative;
+          top: 0;
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  /* ------------ section06 ------------ */
+
+  #section6 {
+    margin: 36px auto 36px;
+    padding: 30px 24px;
+    width: 89%;
+
+    h2 {
+      font-size: 22px;
+      margin: 0 auto;
+      text-align: center;
+      width: 242px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 23.8px;
+      margin: 0 auto;
+      padding: 24px 0 0;
+      width: 100%;
+    }
+  }
+
+  /* ------------ title_sub_h2 ------------ */
+
+  .title_sub_h2 {
+    background: linear-gradient(
+      transparent 60%,
+      $sub_season_background_color 40%
+    );
+    color: $sub_season_title_color;
+    font-family: "ヒラギノ丸ゴ StdN", "W6";
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 228px;
+  }
+
+  .title_sub_h2_relax {
+    background: linear-gradient(
+      transparent 60%,
+      $sub_season_background_color 40%
+    );
+    color: $sub_season_title_color;
+    font-family: "ヒラギノ丸ゴ StdN", "W6";
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 268px;
+  }
+
+  .title_sub_p {
+    font-family: "Hiragino Maru Gothic Std";
+    font-size: 20px;
+  }
+
+  /* ------------ bannerarea ------------ */
+
+  .banner_area {
+    display: block;
+    margin: 36px auto;
+    width: 89%;
+
+    p {
+      font-size: 20px;
+      margin: 0 0 26px 0;
+    }
+  }
+
+  .banner_field {
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      margin: 0 0 15px;
+      width: 100%;
+      height: auto;
+    }
+
+    a:last-child img {
+      margin: 0;
+    }
+  }
+
+  .successful_flow {
+    box-sizing: border-box;
+    margin: 36px auto;
+    padding: 30px 24px;
+    width: 89%;
+  }
+  .successful_flow h2 {
+    font-size: 22px;
+    margin: 0 auto 24px auto;
+    text-align: center;
+    width: 144px;
+  }
+  .successful_flow_image {
+    margin: 6px auto 24px;
+    width: 100%;
+  }
+  .successful_flow_second {
+    margin-bottom: 0;
+  }
+  .successful_flow_image_section2 {
+    margin: 24px auto 0;
+    width: 100%;
+  }
+  .successful_flow p {
+    top: 3620px;
+    left: 857px;
+    width: 252px;
+    height: 21px;
+    margin: 0 0 0 auto;
+    text-align: right;
+    font: normal normal normal 12px/31px Meiryo;
+    letter-spacing: 0px;
+    color: #424242;
+    opacity: 1;
+  }
+  .apply_btn {
+    margin: 24px 0 0 0;
+  }
+}

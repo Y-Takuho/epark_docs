@@ -1,0 +1,19 @@
+<svg id="svg_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+      #icon_betumado {
+        fill: #C5C5C5;
+      }
+    </style>
+  </defs>
+  <title>019</title>
+  <g id="_019" data-name="019">
+    <rect class="cls-1" width="24" height="24"/>
+    <g id="icon_betumado">
+      <path d="M17.55,20a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V7A1,1,0,0,1,5,7V19H16.55A1,1,0,0,1,17.55,20ZM21,4V16a1,1,0,0,1-1,1H8a1,1,0,0,1-1-1V4A1,1,0,0,1,8,3H20A1,1,0,0,1,21,4ZM19,7H9v8H19Z"/>
+    </g>
+  </g>
+</svg>

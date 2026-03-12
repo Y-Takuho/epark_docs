@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NSW8QL" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        "gtm.start":
+          new Date().getTime(), event: "gtm.js"
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != "dataLayer" ? "&l=" + l : ""; j.async = true; j.src =
+          "//www.googletagmanager.com/gtm.js?id=" + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-NSW8QL");</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <title>EPARKを使いこなそう｜EPARK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="" />
+  <link rel="canonical" href="https://epark.jp/docs/service/web/">
+
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="./assets/css/webfont.css" type="text/css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+
+  <script>
+    $(function () {
+      $(".js-geolocation").click(async function (e) {
+        e.preventDefault();
+        var genre_id = $(this).data("genre_id");
+        await getPosition().then(param => {
+          let searchUrl = "/search/gps/list?genre_id=" + genre_id + "&" + param + "&" + "radius=0.8";
+          location.href = searchUrl;
+        });
+      });
+
+      function getPosition() {
+        const GPS_ERROR_URL = "/search/gps_list/back/";
+        if (!navigator.geolocation) {
+          location.href = GPS_ERROR_URL;
+          return Promise.resolve();
+        }
+        return new Promise((resolve, reject) => {
+          // 現在地を取得
+          navigator.geolocation.getCurrentPosition(
+            // 取得成功した場合
+            (position) => {
+              var lon = position.coords.longitude;
+              var lat = position.coords.latitude;
+              var result = `position=${lat},${lon}`;
+              resolve(result);
+            },
+            // 取得失敗した場合
+            (error) => {
+              location.href = GPS_ERROR_URL;
+            },
+            {
+              timeout: 1000 * 60 * 5,
+              enableHighAccuracy: true
+            });
+        });
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_wrap">
+      <h1 class="header_logo">
+        <a href="https://epark.jp/"><img src="./assets/images/svg/logo_EPARK.svg" alt="EPARK 人気施設の予約・順番受付サイト"></a>
+      </h1>
+    </div>
+  </header>
+  <main>
+    <section class="section_mv">
+      <div class="inner">
+        <div class="intro">
+          <div class="intro_title">EPARKを使いこなそう</div>
+          <div class="intro_text">できること・お得情報をご紹介！</div>
+        </div>
+      </div>
+    </section>
+    <section class="section_01">
+      <div class="inner">
+        <div class="genre_list">
+          <div class="genre_list_box">
+            <div class="genre_list_box_title">
+              <div class="genre_list_box_title_icon"><i class="icon-027 relax"></i></div>
+              <div class="genre_list_box_title_text">リラクゼーション</div>
+            </div>
+            <div class="genre_list_box_text">初めてのネット予約限定！<span>最大1,000円OFF</span>になる初回特典を配布中！</div>
+            <div class="genre_list_box_link"><a class="js-geolocation" data-genre_id="110000" href="#">近くの施設を探す</a>
+            </div>
+          </div>
+          <div class="genre_list_box">
+            <div class="genre_list_box_title">
+              <div class="genre_list_box_title_icon"><i class="icon-028 takeout"></i></div>
+              <div class="genre_list_box_title_text">テイクアウト</div>
+            </div>
+            <div class="genre_list_box_text">ネット予約して店頭で待たずにお持ち帰り！<br>店頭支払いだけでなく事前決済にも対応しています。</div>
+            <div class="genre_list_box_link"><a class="js-geolocation" data-genre_id="80000" href="#">近くの施設を探す</a></div>
+          </div>
+          <div class="genre_list_box">
+            <div class="genre_list_box_title">
+              <div class="genre_list_box_title_icon"><i class="icon-041 odekake"></i></div>
+              <div class="genre_list_box_title_text">おでかけスポット</div>
+            </div>
+            <div class="genre_list_box_text">水族館やテーマパークなどのレジャー施設のチケットが、お得な割引価格で購入できます！</div>
+            <div class="genre_list_box_link"><a class="js-geolocation" data-genre_id="140000" href="#">近くの施設を探す</a>
+            </div>
+          </div>
+          <div class="genre_list_box">
+            <div class="genre_list_box_title">
+              <div class="genre_list_box_title_icon"><i class="icon-025 dentistry"></i></div>
+              <div class="genre_list_box_title_text">歯医者</div>
+            </div>
+            <div class="genre_list_box_text">歯科医院の検索・ネット予約が簡単！口コミや絞り込み​条件が豊富ですぐに希望の医院が見つかります。</div>
+            <div class="genre_list_box_link"><a class="js-geolocation" data-genre_id="40000" href="#">近くの施設を探す</a></div>
+          </div>
+          <div class="genre_list_box">
+            <div class="genre_list_box_title">
+              <div class="genre_list_box_title_icon"><i class="icon-024 medical"></i></div>
+              <div class="genre_list_box_title_text">病院</div>
+            </div>
+            <div class="genre_list_box_text">24時間いつでもネットから受付ができます！<br>空き状況が確認できるのですぐ行ける医院も探せます。</div>
+            <div class="genre_list_box_link"><a class="js-geolocation" data-genre_id="20000" href="#">近くの施設を探す</a></div>
+          </div>
+          <div class="genre_list_box">
+            <div class="genre_list_box_title">
+              <div class="genre_list_box_title_icon"><i class="icon-026 pharmacy"></i></div>
+              <div class="genre_list_box_title_text">薬局</div>
+            </div>
+            <div class="genre_list_box_text">処方せんの写真をスマホで撮って送るだけ！<br>好きな時間に待ち時間なしで受け取れます。</div>
+            <div class="genre_list_box_link"><a class="js-geolocation" data-genre_id="50000" href="#">近くの施設を探す</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section_02">
+      <div class="inner">
+        <div class="intro">
+          <div class="intro_text">便利なアプリ版もあります</div>
+        </div>
+        <div class="banner">
+          <div class="banner_box">
+            <a href="https://eparkapp.onelink.me/yuvN?pid=Fas_Mypage_Intro1">
+              <img class="" src="./assets/images/1x/app-banner.png"
+                srcset="./assets/images/1x/app-banner.png, ./assets/images/2x/app-banner@2x.png 2x, ./assets/images/3x/app-banner@3x.png 3x"
+                alt="次はアプリでかんたん予約 EPARK 公式アプリ">
+            </a>
+          </div>
+          <div class="banner_box">
+            <img class="" src="./assets/images/1x/app-shokai2.png"
+              srcset="./assets/images/1x/app-shokai2.png, ./assets/images/2x/app-shokai2@2x.png 2x, ./assets/images/3x/app-shokai2@3x.png 3x"
+              alt="②予約日時が近づいたら通知でお知らせ">
+          </div>
+          <div class="banner_box">
+            <img class="" src="./assets/images/1x/app-shokai3.png"
+              srcset="./assets/images/1x/app-shokai3.png, ./assets/images/2x/app-shokai3@2x.png 2x, ./assets/images/3x/app-shokai3@3x.png 3x"
+              alt="③マップから施設を探せる">
+          </div>
+          <div class="banner_box">
+            <a href="https://eparkapp.onelink.me/yuvN?pid=Fas_Mypage_Intro2">
+              <img class="" src="./assets/images/1x/app-shokai4.png"
+                srcset="./assets/images/1x/app-shokai4.png, ./assets/images/2x/app-shokai4@2x.png 2x, ./assets/images/3x/app-shokai4@3x.png 3x"
+                alt="今すぐダウンロード！">
+            </a>
+          </div>
+        </div>
+        <div class="app_dl">
+          <div class="app_dl_box">
+            <a href="https://eparkapp.onelink.me/yuvN?pid=Fas_Mypage_Intro2">
+              <img src="./assets/images/svg/app-store-badge.svg" alt="Apple Store">
+            </a>
+          </div>
+          <div class="app_dl_box">
+            <a href="https://eparkapp.onelink.me/yuvN?pid=Fas_Mypage_Intro2">
+              <img src="./assets/images/svg/google-play-badge.svg" alt="Google Play">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer_wrap">
+      <ul>
+        <li><a href="https://epark.co.jp/corporate/outline/" target="_blank">運営会社</a></li>
+        <li><a href="https://www.epark.jp/terms/" target="_blank">会員規約</a></li>
+        <li><a href="https://www.epark.jp/use_terms/" target="_blank">利用規約</a></li>
+        <li><a href="https://epark.co.jp/privacy/" target="_blank">プライバシーポリシー</a></li>
+      </ul>
+      <div id="copyright">
+        <div class="wrapper">
+          <p>© 2001-
+            <script
+              type="text/javascript">myDate = new Date(); myYear = myDate.getFullYear(); document.write(myYear);</script>
+            EPARK, inc.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

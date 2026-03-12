@@ -1,0 +1,14 @@
+<svg id="svg_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>028</title>
+  <g id="_028" data-name="028">
+    <rect class="cls-1" width="24" height="24"/>
+    <path id="テイクアウト" d="M21.1,10a0,0,0,0,0,0,0h-3.5V9.5a5.56,5.56,0,0,0-11.12,0V10H2.9L2,18.9A1,1,0,0,0,3,20H21a1,1,0,0,0,1-1.1ZM9.47,9.5a2.53,2.53,0,0,1,5.06,0V10H9.47Z"/>
+  </g>
+</svg>

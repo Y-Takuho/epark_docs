@@ -1,0 +1,25 @@
+6/23 変更点
+ヘッダーのCSS修正
+その他おすすめ商品の「もっと見る」別タブ表示化
+一部閉じタグが不足していた箇所の修正
+
+5/27 変更点
+・step1、step2、各クーポン画像、まとめLPバナーの参照先を共通化（../assets/images/）
+　各クーポン100~2000円の画像を格納しているのでこちらを参照お願いいたします。
+・パンくずのhtml構造、CSS修正
+・GTMタグ挿入
+・おすすめ商品の詳細を見るmargin設定
+
+▼クーポンURLについて
+クーポンURLは更新頻度が高いためjsonファイルに集約しています。
+クーポンのaタグに「coupon$値段$」のクラス設定をお願いいたします。
+※hrefの設定は不要となります。
+
+例：500円クーポンの場合
+<a class="coupon_ticket_image coupon500">
+  <picture>
+    <source media="(min-width: 568px)" srcset="../assets/images/1x/pc-coupon500.png, ../assets/images/2x/pc-coupon500@2x.png 2x">
+    <source media="(max-width: 567px)" srcset="../assets/images/1x/sp-coupon500.png, ../assets/images/2x/sp-coupon500@2x.png 2x, ../assets/images/3x/sp-coupon500@3x.png 3x">
+    <img class="lazyload" src="../assets/images/1x/lazyload.gif" data-src="../assets/images/1x/pc-try500.png" srcset="../assets/images/1x/pc-try500.png, ../assets/images/2x/pc-try500@2x.png 2x" alt="">
+  </picture>
+</a>

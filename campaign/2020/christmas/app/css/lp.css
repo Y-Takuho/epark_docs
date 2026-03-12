@@ -1,0 +1,754 @@
+@charset "UTF-8";
+/* ------------ common ------------ */
+.sp_br {
+  display: none;
+}
+
+.star_break {
+  margin: 0 auto;
+  width: 1080px;
+}
+
+.star_break img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ------------ kv ------------ */
+#kv {
+  margin: 0 auto;
+  position: relative;
+  width: 1080px;
+  z-index: 1;
+  font-size: 0;
+}
+
+.kv_back {
+  height: 550px;
+  position: relative;
+}
+
+.kv_main {
+  margin-top: -550px;
+  position: relative;
+}
+
+#kv h1 {
+  color: #b83020;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-size: 25px;
+  margin: 60px 0 24px 0;
+  text-align: center;
+}
+
+#kv .kv_genre {
+  display: block;
+  margin: 0 auto 54px;
+}
+
+/* ------------ section01 ------------ */
+#section1 {
+  margin: 0 auto 54px;
+  width: 1080px;
+  position: relative;
+}
+#section1 h2 {
+  font-size: 24px;
+  color: #753e75;
+  text-align: center;
+}
+#section1 img {
+  margin: 0 27px 0 0;
+}
+#section1 picture:last-child img {
+  margin: 0;
+}
+#section1 .section1_btn {
+  text-align: center;
+  background: #753e75;
+  width: 260px;
+  margin: 0 auto 0;
+  border-radius: 6px;
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 54px;
+}
+#section1 .section1_btn a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 9px 0;
+}
+#section1 .section1_btn a:after {
+  content: ">";
+  font-size: 20px;
+}
+#section1 .section1_sp_prize_field {
+  font-size: 0;
+}
+
+/* ------------ app_download ------------ */
+.app_download {
+  margin-bottom: 54px;
+}
+.app_download .app_download_wrap {
+  width: 870px;
+  margin: 0 auto;
+  padding: 36px;
+  border: 12px solid var(--unnamed-color-fbf3e3);
+  border: 12px solid #fbf3e3;
+  border-radius: 24px;
+  opacity: 1;
+  font-size: 0;
+  text-align: center;
+}
+.app_download .app_download_icon {
+  margin-top: 15px;
+}
+.app_download .app_download_icon ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app_download .app_download_icon ul li:first-child {
+  margin-right: 24px;
+}
+.app_download .app_download_icon ul li.qr_code {
+  margin-left: 45px;
+}
+
+/* ------------ section02 ------------ */
+#section2 {
+  background: var(--unnamed-color-fbf3e3) 0% 0% no-repeat padding-box;
+  background: #fbf3e3 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  opacity: 1;
+  margin: 54px auto;
+  padding: 54px 0;
+  width: 1080px;
+}
+#section2 h2 {
+  background: linear-gradient(transparent 60%, #edd9a9 40%);
+  color: #184c32;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-size: 28px;
+  margin: 0 auto;
+  text-align: center;
+  width: 182px;
+}
+#section2 .section2_ghost {
+  display: block;
+  margin: 24px auto 0 auto;
+}
+#section2 p {
+  color: #5a5a5a;
+  font-size: 18px;
+  line-height: 30.6px;
+  margin: 36px auto 0 auto;
+  width: 918px;
+}
+#section2 p b {
+  color: #5a5a5a;
+}
+#section2 p span {
+  color: #fe6161;
+  font-weight: bold;
+}
+#section2 .section2_genre_field {
+  background: #ffffff;
+  margin: 15px auto 0 auto;
+  padding: 36px 0;
+  width: 918px;
+}
+#section2 .section2_genre_field .section2_genre_title {
+  display: block;
+  margin: 0 auto;
+}
+#section2 .section2_genre_field ul {
+  display: flex;
+  justify-content: center;
+  margin: 24px auto 0 auto;
+}
+#section2 .section2_genre_field ul li {
+  color: #fff;
+  cursor: default;
+  font-family: "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN";
+  font-size: 16px;
+  height: 75px;
+  line-height: 20px;
+  margin-right: 15px;
+  text-align: center;
+  width: 128px;
+}
+#section2 .section2_genre_field ul li:last-child {
+  margin-right: 0;
+}
+#section2 .section2_genre_field ul li svg {
+  padding: 0 0 6px;
+  width: 42px;
+  height: 42px;
+}
+#section2 .section2_genre_field ul li.takeout {
+  color: #ff2929;
+}
+#section2 .section2_genre_field ul li.takeout svg {
+  fill: #ff2929;
+}
+#section2 .section2_genre_field ul li.sweets {
+  color: #c7000b;
+}
+#section2 .section2_genre_field ul li.sweets svg {
+  fill: #c7000b;
+}
+#section2 .section2_genre_field ul li.relax {
+  color: #dc5519;
+}
+#section2 .section2_genre_field ul li.relax svg {
+  fill: #dc5519;
+}
+#section2 .section2_genre_field ul li.animal_hospital,
+#section2 .section2_genre_field ul li.trimming {
+  color: #ff9900;
+}
+#section2 .section2_genre_field ul li.animal_hospital svg,
+#section2 .section2_genre_field ul li.trimming svg {
+  fill: #ff9900;
+}
+#section2 .section2_genre_field ul li.beauty {
+  color: #e5375a;
+}
+#section2 .section2_genre_field ul li.beauty svg {
+  fill: #e5375a;
+}
+#section2 .section2_genre_field ul li img {
+  padding: 12px 0 0 0;
+}
+
+/* ------------ section03 ------------ */
+#section3 {
+  background: var(--unnamed-color-fbf3e3) 0% 0% no-repeat padding-box;
+  background: #fbf3e3 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  opacity: 1;
+  margin: 54px auto;
+  padding: 54px 0;
+  width: 1080px;
+}
+
+#section3 h2 {
+  background: linear-gradient(transparent 60%, #edd9a9 40%);
+  color: #184c32;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-size: 28px;
+  margin: 0 auto;
+  text-align: center;
+  width: 237px;
+}
+
+#section3 p {
+  color: #5a5a5a;
+  font-size: 18px;
+  line-height: 30.6px;
+  padding: 24px 81px 0;
+}
+
+#section3 p b {
+  color: #5a5a5a;
+}
+
+/* ------------ section04 ------------ */
+#section4 {
+  background: var(--unnamed-color-fbf3e3) 0% 0% no-repeat padding-box;
+  background: #fbf3e3 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  opacity: 1;
+  box-sizing: border-box;
+  margin: 54px auto 0;
+  padding: 54px 0px;
+  width: 1080px;
+}
+
+#section4 h2 {
+  background: linear-gradient(transparent 60%, #edd9a9 40%);
+  color: #184c32;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-size: 28px;
+  margin: 0 auto;
+  text-align: center;
+  width: 125px;
+}
+
+#section4 p {
+  color: #5a5a5a;
+  font-size: 18px;
+  line-height: 30.6px;
+  padding: 24px 81px 0;
+}
+
+/* ------------ section05 ------------ */
+#section5 {
+  background: #184c32;
+  height: 368px;
+  margin: 54px auto 0;
+}
+
+#section5 ul {
+  margin: 0 auto;
+  position: relative;
+  width: 1080px;
+}
+
+#section5 ul li:nth-child(1) {
+  left: 90px;
+  position: absolute;
+  top: 54px;
+}
+
+#section5 ul li:nth-child(2) {
+  left: 90px;
+  position: absolute;
+  top: 228px;
+}
+
+#section5 ul li:nth-child(3) {
+  left: 313px;
+  position: absolute;
+  top: 228px;
+}
+
+#section5 ul li:nth-child(4) {
+  left: 558px;
+  position: absolute;
+  top: 200px;
+}
+
+#section5 ul li:nth-child(5) {
+  position: absolute;
+  right: 0px;
+  top: 18px;
+}
+
+#section5 ul li:nth-child(6) {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+}
+
+/* ------------ bannerarea ------------ */
+.banner_area {
+  display: block;
+  box-sizing: border-box;
+  margin: 54px auto;
+  width: 1080px;
+}
+
+.banner_area p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: 5a5a5a;
+  margin: 0 0 24px 0;
+}
+
+.banner_field {
+  display: flex;
+  justify-content: center;
+}
+
+.banner_field img {
+  margin: 0 30px;
+  width: 300px;
+  height: 100px;
+}
+
+/* ------------ successful_flow ------------ */
+.successful_flow {
+  background: var(--unnamed-color-fbf3e3) 0% 0% no-repeat padding-box;
+  background: #fbf3e3 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  opacity: 1;
+  margin: 54px auto 0;
+  padding: 54px 0px;
+  width: 1080px;
+}
+.successful_flow h2 {
+  background: linear-gradient(transparent 60%, #edd9a9 40%);
+  color: #184c32;
+  font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO",
+    "HGMaruGothicMPRO";
+  font-size: 28px;
+  margin: 0 auto;
+  text-align: center;
+  width: 182px;
+}
+
+.successful_flow h4 {
+  top: 3620px;
+  left: 857px;
+  width: 252px;
+  height: 21px;
+  margin: 0 82px 0 auto;
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) 14px/30.6px
+    var(--unnamed-font-family-meiryo);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-424242);
+  text-align: right;
+  font: normal normal normal 14px/31px Meiryo;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+}
+.successful_flow picture {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+.successful_flow_image {
+  margin: 36px auto 0;
+}
+
+/*---------------------------------------------
+SMARTPHONES SIZE
+----------------------------------------------*/
+@media screen and (max-width: 767px) {
+  /* ------------ common ------------ */
+  img {
+    max-width: 100%;
+  }
+
+  .sp_br {
+    display: inline;
+  }
+
+  .star_break {
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .star_break img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ------------ kv ------------ */
+  #kv {
+    width: 100%;
+  }
+
+  .kv_back {
+    height: auto;
+  }
+
+  .kv_main {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  #kv h1 {
+    box-sizing: border-box;
+    margin: 36px auto;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #kv .kv_genre {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  /* ------------ section01 ------------ */
+  #section1 {
+    box-sizing: border-box;
+    margin: 36px auto;
+    width: 89%;
+  }
+
+  #section1 .section1_sp_prize_field {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0px 0 0px;
+  }
+
+  #section1 h2 {
+    font-size: 15px;
+  }
+
+  #section1 img {
+    display: block;
+    width: 100%;
+  }
+
+  #section1 .section1_btn {
+    width: 250px;
+    font-size: 16px;
+    bottom: 30px;
+  }
+
+  /* ------------ app_download ------------ */
+  .app_download {
+    margin: 36px 0;
+  }
+  .app_download .app_download_wrap {
+    width: 89%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .app_download .app_download_icon {
+    margin-top: 24px;
+  }
+  .app_download .app_download_icon ul {
+    display: block;
+  }
+  .app_download .app_download_icon ul li:first-child {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  /* ------------ section02 ------------ */
+  #section2 {
+    box-sizing: border-box;
+    margin: 36px auto;
+    padding: 30px 24px;
+    width: 89%;
+  }
+  #section2 h2 {
+    font-size: 22px;
+    width: 140px;
+  }
+  #section2 .section2_flag {
+    margin: 24px auto 0;
+  }
+  #section2 p {
+    font-size: 14px;
+    line-height: 23.8px;
+    margin: 24px auto 0;
+    width: 100%;
+  }
+  #section2 .section2_genre_field {
+    margin: 24px auto 0;
+    padding: 24px 0 9px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  #section2 .section2_genre_field ul {
+    flex-wrap: wrap;
+    margin: 24px auto 0;
+  }
+  #section2 .section2_genre_field ul li {
+    font-size: 14px;
+    height: auto;
+    line-height: 14px;
+    margin: 0 8px 15px;
+    text-align: center;
+    width: 43%;
+  }
+  #section2 .section2_genre_field ul li:last-child {
+    margin-right: 8px;
+  }
+  #section2 .section2_genre_field ul li img {
+    padding: 12px 0 0 0;
+  }
+
+  /* ------------ section03 ------------ */
+  #section3 {
+    box-sizing: border-box;
+    margin: 36px auto;
+    padding: 30px 24px;
+    width: 89%;
+  }
+
+  #section3 h2 {
+    font-size: 22px;
+    width: 190px;
+  }
+
+  #section3 p {
+    font-size: 14px;
+    line-height: 23.8px;
+    margin: 0 auto;
+    padding: 24px 0 0;
+    width: 100%;
+  }
+
+  #section3 p b {
+    color: #5a5a5a;
+  }
+
+  /* ------------ section04 ------------ */
+  #section4 {
+    margin: 36px auto 0;
+    padding: 30px 24px;
+    width: 89%;
+  }
+
+  #section4 h2 {
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: center;
+    width: 92px;
+  }
+
+  #section4 p {
+    font-size: 14px;
+    line-height: 23.8px;
+    margin: 0 auto;
+    padding: 24px 0 0;
+    width: 100%;
+  }
+
+  /* ------------ section05 ------------ */
+  #section5 {
+    box-sizing: border-box;
+    height: auto;
+    margin: 36px auto 0;
+    padding: 30px 24px 24px;
+  }
+
+  #section5 ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+  }
+
+  #section5 ul li:nth-child(1) {
+    left: 0;
+    margin: 0 0 0 0;
+    order: 1;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+  #section5 ul li:nth-child(1) img {
+    width: 100%;
+  }
+
+  #section5 ul li:nth-child(2) {
+    left: 0;
+    margin: 0 0.5% 0 0;
+    order: 3;
+    position: relative;
+    top: 0;
+    width: 49%;
+  }
+
+  #section5 ul li:nth-child(2) img {
+    width: 100%;
+  }
+
+  #section5 ul li:nth-child(3) {
+    left: 0;
+    margin: 0 0 0 0.5%;
+    order: 4;
+    position: relative;
+    top: 0;
+    width: 49%;
+  }
+
+  #section5 ul li:nth-child(3) img {
+    width: 100%;
+  }
+
+  #section5 ul li:nth-child(4) {
+    display: none;
+    left: 0;
+    position: relative;
+    top: 0;
+  }
+
+  #section5 ul li:nth-child(5) {
+    left: 0;
+    margin: 0 0 5px 0;
+    order: 2;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+  #section5 ul li:nth-child(5) img {
+    width: 100%;
+  }
+
+  /* ------------ bannerarea ------------ */
+  .banner_area {
+    display: block;
+    margin: 36px auto;
+    width: 89%;
+  }
+
+  .banner_area p {
+    font-size: 20px;
+    margin: 0 0 26px 0;
+  }
+
+  .banner_field {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .banner_field img {
+    margin: 0 0 15px;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner_field a:last-child img {
+    margin: 0;
+  }
+
+  .successful_flow {
+    box-sizing: border-box;
+    margin: 36px auto;
+    padding: 30px 24px;
+    width: 89%;
+  }
+  .successful_flow h2 {
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: center;
+    width: 144px;
+  }
+  .successful_flow_image {
+    margin: 24px auto 0;
+    width: 100%;
+  }
+  .successful_flow h4 {
+    top: 3620px;
+    left: 857px;
+    width: 252px;
+    height: 21px;
+    margin: 0 0 0 auto;
+    font: var(--unnamed-font-style-normal) normal
+      var(--unnamed-font-weight-normal) 14px/30.6px
+      var(--unnamed-font-family-meiryo);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-424242);
+    text-align: right;
+    font: normal normal normal 12px/31px Meiryo;
+    letter-spacing: 0px;
+    color: #424242;
+    opacity: 1;
+  }
+}

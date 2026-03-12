@@ -1,0 +1,151 @@
+@charset "UTF-8";
+.br_box_wrap {
+  margin: 4rem auto 0;
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .br_box_wrap .br_box .br_info {
+    width: 330px;
+    margin: 0 auto 3rem;
+    background: #75AD27;
+    border: #75AD27 solid 2px; }
+    .br_box_wrap .br_box .br_info a + a {
+      display: block;
+      line-height: 5rem;
+      color: white;
+      text-align: center;
+      margin-top: -4px;
+      padding-right: 3rem;
+      font-size: 2rem;
+      position: relative; }
+      .br_box_wrap .br_box .br_info a + a:after {
+        content: "";
+        display: block;
+        height: 1.6em;
+        width: 1.6em;
+        background: url("../img/Icon open-external-link.svg") no-repeat;
+        position: absolute;
+        top: 1.7rem;
+        right: 0; }
+
+.cp_box {
+  background: url("../img/coupon_base.png") no-repeat;
+  background-size: cover;
+  width: 360px;
+  height: 170px;
+  display: block;
+  font-family: 'Noto Sans JP';
+  font-size: 2.4rem;
+  padding: 1.05rem 1.5rem 0; }
+  .cp_box .d_o_w {
+    font-size: .8em; }
+  .cp_box .cp_copy {
+    display: flex; }
+    .cp_box .cp_copy .cp_set {
+      padding-top: 2rem; }
+      .cp_box .cp_copy .cp_set img {
+        width: 130px;
+        margin: auto;
+        display: block;
+        margin-bottom: .3rem; }
+
+.br_box {
+  margin: 0 10px 9rem; }
+
+.cp_box {
+  /* Tooltip */
+  /* Animation */ }
+  .cp_box .term {
+    text-align: center;
+    line-height: 1em;
+    font-weight: 700; }
+    .cp_box .term span {
+      text-align: center;
+      line-height: 1em;
+      font-weight: 700; }
+  .cp_box .minuse {
+    text-align: center;
+    line-height: 1em;
+    font-weight: 700; }
+  .cp_box .term:before {
+    content: "利用期限";
+    font-weight: 300;
+    font-size: .8333em;
+    margin-right: 1.6rem; }
+  .cp_box .term:after {
+    content: "まで";
+    font-weight: 300;
+    font-size: .8333em; }
+  .cp_box .minuse {
+    margin-top: .15rem; }
+    .cp_box .minuse:before {
+      content: "最低利用金額";
+      font-weight: 300;
+      font-size: .8333em;
+      margin-right: 1.6rem; }
+  .cp_box .cp_info {
+    width: 172px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 4.8rem;
+    color: white;
+    margin-top: 3.75rem;
+    line-height: 0; }
+    .cp_box .cp_info span {
+      font-weight: 700;
+      font-size: .5em; }
+    .cp_box .cp_info:after {
+      content: "割引コード";
+      /*	display: inline-block;*/
+      font-size: 1.8rem;
+      display: block;
+      margin-top: -0.25em;
+      line-height: 2.6rem;
+      padding-left: 2.4rem;
+      font-weight: 400;
+      letter-spacing: -.05em; }
+  .cp_box .copy_btn {
+    display: inline-block;
+    width: 144px;
+    text-align: center;
+    background-color: white;
+    color: #393939;
+    letter-spacing: .1em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 4.6rem;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid #B6BCBF;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 .77em; }
+    .cp_box .copy_btn.copied {
+      font-size: 1.6rem;
+      color: #8FC31F; }
+    .cp_box .copy_btn:active {
+      transform: translateY(4px);
+      border-bottom: none; }
+  .cp_box .tooltip::after {
+    content: 'コピーしました!';
+    background: #8FC31F;
+    width: 14em;
+    line-height: 5em;
+    display: inline-block;
+    color: #fff;
+    border-radius: .4rem;
+    position: absolute;
+    left: 50%;
+    top: .5em;
+    transform: translate(-50%, 0);
+    font-size: .75rem;
+    padding: 0px 8px;
+    animation: fade-tooltip .5s 1s 1 forwards; }
+@keyframes fade-tooltip {
+  to {
+    opacity: 0; } }

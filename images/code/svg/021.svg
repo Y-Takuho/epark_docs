@@ -1,0 +1,17 @@
+<svg id="svg_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+      #icon_picup {
+        fill: #FFF82B;
+      }
+    </style>
+  </defs>
+  <title>021</title>
+  <g id="svg_icon" data-name="svg_icon">
+    <rect class="cls-1" width="24" height="24"/>
+    <path id="icon_picup" d="M18,4h0L16.28,3h0L14.74,6.56a6.45,6.45,0,0,1,.87.52ZM9.27,6.56,7.73,3h0L6,4H6L8.4,7.1A4.86,4.86,0,0,1,9.27,6.56ZM12,5.88h.51L13,2H11l.5,3.9ZM9.75,20.23a.89.89,0,0,0,.9.88h0a.91.91,0,0,0,.9.89h.9a.89.89,0,0,0,.9-.88h0a.89.89,0,0,0,.9-.88h0v-.47H9.75ZM12,8a4.48,4.48,0,0,0-3,7.84H9a2.07,2.07,0,0,1,.74,1.55v.36h4.5v-.36A2.11,2.11,0,0,1,15,15.84h0A4.49,4.49,0,0,0,12,8Z"/>
+  </g>
+</svg>

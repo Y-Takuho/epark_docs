@@ -1,0 +1,221 @@
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.item_wrap {
+  background: #f9f7e7;
+  padding: 1.5em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.item_wrap .item {
+  background: #fff;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.item_wrap .item a {
+  text-decoration: none;
+  display: block;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.item_wrap .item a figure:hover {
+  opacity: 0.8;
+}
+
+.item_wrap .item a .item_info_wrap:hover {
+  opacity: 0.8;
+}
+
+.item_wrap .item a figure {
+  margin: 0 0 5px 0;
+}
+
+.item_wrap .item a figure img {
+  max-width: 100%;
+}
+
+.item_wrap .item a .item_info_wrap .bland_name {
+  margin: 0 0 5px 0;
+  color: #808080;
+  font-size: 12px;
+}
+
+.item_wrap .item a .item_info_wrap .item_name {
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  color: #1e7ede;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.item_wrap .item a .item_info_wrap .price {
+  color: #ff0606;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.item_wrap .item a .item_info_wrap .price span:first-child {
+  display: block;
+}
+
+.item_wrap .item a .item_info_wrap .price .default_price {
+  font-size: 12px;
+  color: #222;
+}
+
+.item_wrap .item a .item_info_wrap .price .campaign_price {
+  font-size: 18px;
+  margin-left: 6px;
+}
+
+.item_wrap .item a .item_info_wrap .btn {
+  position: relative;
+  background: #92d050;
+  max-width: 100%;
+  padding: 0.6em;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.item_wrap .item a .item_info_wrap .btn:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  margin: auto;
+  transform: translateY(-50%) rotate(45deg);
+  transition: 0.2s;
+}
+
+.item_wrap .item a .item_info_wrap .btn:hover:after {
+  right: 4%;
+}
+
+@media screen and (min-width: 768px) {
+  .item_wrap .item {
+    width: 33%;
+    margin-left: 2%;
+  }
+  .item_wrap .item:first-child {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .item_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 1em;
+  }
+  .item_wrap .item {
+    width: 100%;
+    margin-left: 0;
+    padding: 0.8em;
+  }
+  .item_wrap .item a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .item_wrap .item a figure {
+    width: 40%;
+    margin-bottom: 0;
+  }
+  .item_wrap .item a .item_info_wrap {
+    width: 58%;
+    margin-left: 2%;
+  }
+  .item_wrap .item a .item_info_wrap .bland_name {
+    font-size: 11px;
+  }
+  .item_wrap .item a .item_info_wrap .item_name {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+  }
+  .item_wrap .item a .item_info_wrap .price {
+    font-size: 12px;
+    margin: 0 0 6px 0;
+  }
+  .item_wrap .item a .item_info_wrap .price .default_price {
+    font-size: 11px;
+  }
+  .item_wrap .item a .item_info_wrap .price .campaign_price {
+    font-size: 16px;
+  }
+  .item_wrap .item a .item_info_wrap .btn {
+    font-size: 13px;
+    padding: 0.4em;
+  }
+}
+.connecting_text {
+  position: relative;
+  background: #ffd243;
+}
+
+.connecting_text:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 90px 540px;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.connecting_text:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 0 0 540px;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.connecting_text p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  padding: 25px 0 45px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .connecting_text:after {
+    border-width: 0 0 40px 200px;
+  }
+  .connecting_text:before {
+    border-width: 40px 0 0 200px;
+  }
+  .connecting_text p {
+    font-size: 16px;
+    padding: 20px 0 30px 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NSW8QL" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        "gtm.start":
+          new Date().getTime(), event: "gtm.js"
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != "dataLayer" ? "&l=" + l : ""; j.async = true; j.src =
+          "//www.googletagmanager.com/gtm.js?id=" + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-NSW8QL");</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <title>EPARKを使いこなそう｜EPARK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="" />
+  <link rel="canonical" href="https://epark.jp/docs/service/web/">
+
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="./assets/css/webfont.css" type="text/css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+
+  <script>
+    $(function () {
+      $(".js-geolocation").click(async function (e) {
+        e.preventDefault();
+        var genre_id = $(this).data("genre_id");
+        await getPosition().then(param => {
+          let searchUrl = "/search/gps/list?genre_id=" + genre_id + "&" + param + "&" + "radius=0.8";
+          location.href = searchUrl;
+        });
+      });
+
+      function getPosition() {
+        const GPS_ERROR_URL = "/search/gps_list/back/";
+        if (!navigator.geolocation) {
+          location.href = GPS_ERROR_URL;
+          return Promise.resolve();
+        }
+        return new Promise((resolve, reject) => {
+          // 現在地を取得
+          navigator.geolocation.getCurrentPosition(
+            // 取得成功した場合
+            (position) => {
+              var lon = position.coords.longitude;
+              var lat = position.coords.latitude;
+              var result = `position=${lat},${lon}`;
+              resolve(result);
+            },
+            // 取得失敗した場合
+            (error) => {
+              location.href = GPS_ERROR_URL;
+            },
+            {
+              timeout: 1000 * 60 * 5,
+              enableHighAccuracy: true
+            });
+        });
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <main>
+    <section class="section_mv">
+      <div class="inner">
+        <div class="intro">
+          <div class="intro_title">EPARKを使いこなそう</div>
+          <div class="intro_text">できること・お得情報をご紹介！</div>
+        </div>
+      </div>
+    </section>
+    <section class="section_01">
+      <div class="inner">
+        <div class="genre_list">
+          <div class="genre_list_box">
+            <div class="genre_list_box_title">
+              <div class="genre_list_box_title_icon"><i class="icon-027 relax"></i></div>
+              <div class="genre_list_box_title_text">リラクゼーション</div>
+            </div>
+            <div class="genre_list_box_text">初めてのネット予約限定！<span>最大1,000円OFF</span>になる初回特典を配布中！</div>
+            <div class="genre_list_box_link"><a
+                href="eparkextapp://facility/?deeplinktype=coverall_search&search=WwB7ACIAaQBkACIAOgA2ACwAIgB0AGUAeAB0ACIAOgAiAOow6TCvMLww%2FDC3MOcw8zAiACwAIgB0AHkAcABlACIAOgAiAGcAZQBuAHIAZQAiACwAIgBnAGUAbgByAGUAIgA6ADYAfQAsAHsAIgBpAGQAIgA6ACIAbQB5AHAAbwBzAGkAdABpAG8AbgAiACwAIgB0AGUAeAB0ACIAOgAiAP5zKFcwVyIALAAiAHQAeQBwAGUAIgA6ACIAbQB5AHAAbwBzAGkAdABpAG8AbgAiACwAIgBsAGEAdABpAHQAdQBkAGUAIgA6ACIAMwA1AC4ANgA0ADYANgAyADAANwAwADAAMAAwACIALAAiAGwAbwBuAGcAaQB0AHUAZABlACIAOgAiADEAMwA5AC4AOAA3ADMANAAxADgANwAwADAAMAAwACIAfQAsAHsAIgB0AHkAcABlACIAOgAiAGYAYQBjAGkAbABpAHQAeQBfAHQAYQBiACIALAAiAHYAYQBsAHUAZQAiADoAIgBmAGEAYwBpAGwAaQB0AHkAXwB0AGEAYgBfAGwAaQBzAHQAIgB9AF0A">近くの施設を探す</a>
+            </div>
+          </div>
+          <div class="genre_list_box">
+            <div class="genre_list_box_title">
+              <div class="genre_list_box_title_icon"><i class="icon-028 takeout"></i></div>
+              <div class="genre_list_box_title_text">テイクアウト</div>
+            </div>
+            <div class="genre_list_box_text">ネット予約して店頭で待たずにお持ち帰り！<br>店頭支払いだけでなく事前決済にも対応しています。</div>
+            <div class="genre_list_box_link"><a
+                href="eparkextapp://facility/?deeplinktype=coverall_search&search=WwB7ACIAaQBkACIAOgAxADMALAAiAHQAZQB4AHQAIgA6ACIAxjCkMK8wojCmMMgwIgAsACIAdAB5AHAAZQAiADoAIgBnAGUAbgByAGUAIgAsACIAZwBlAG4AcgBlACIAOgAxADMAfQAsAHsAIgBpAGQAIgA6ACIAbQB5AHAAbwBzAGkAdABpAG8AbgAiACwAIgB0AGUAeAB0ACIAOgAiAP5zKFcwVyIALAAiAHQAeQBwAGUAIgA6ACIAbQB5AHAAbwBzAGkAdABpAG8AbgAiACwAIgBsAGEAdABpAHQAdQBkAGUAIgA6ACIAMwA1AC4ANgA0ADYANgAyADAANwAwADAAMAAwACIALAAiAGwAbwBuAGcAaQB0AHUAZABlACIAOgAiADEAMwA5AC4AOAA3ADMANAAxADgANwAwADAAMAAwACIAfQAsAHsAIgB0AHkAcABlACIAOgAiAGYAYQBjAGkAbABpAHQAeQBfAHQAYQBiACIALAAiAHYAYQBsAHUAZQAiADoAIgBmAGEAYwBpAGwAaQB0AHkAXwB0AGEAYgBfAHMAaABvAHAAIgB9AF0A">近くの施設を探す</a>
+            </div>
+          </div>
+          <div class="genre_list_box">
+            <div class="genre_list_box_title">
+              <div class="genre_list_box_title_icon"><i class="icon-041 odekake"></i></div>
+              <div class="genre_list_box_title_text">おでかけスポット</div>
+            </div>
+            <div class="genre_list_box_text">水族館やテーマパークなどのレジャー施設のチケットが、お得な割引価格で購入できます！</div>
+            <div class="genre_list_box_link"><a
+                href="eparkextapp://facility/?deeplinktype=coverall_search&search=WwB7ACIAaQBkACIAOgAyADQALAAiAHQAZQB4AHQAIgA6ACIASjBnMEswUTC5MN0wwzDIMCIALAAiAHQAeQBwAGUAIgA6ACIAZwBlAG4AcgBlACIALAAiAGcAZQBuAHIAZQAiADoAMgA0AH0ALAB7ACIAaQBkACIAOgAiAG0AeQBwAG8AcwBpAHQAaQBvAG4AIgAsACIAdABlAHgAdAAiADoAIgD%2BcyhXMFciACwAIgB0AHkAcABlACIAOgAiAG0AeQBwAG8AcwBpAHQAaQBvAG4AIgAsACIAbABhAHQAaQB0AHUAZABlACIAOgAiADMANQAuADYANAA2ADYAMgAwADcAMAAwADAAMAAiACwAIgBsAG8AbgBnAGkAdAB1AGQAZQAiADoAIgAxADMAOQAuADgANwAzADQAMQA4ADcAMAAwADAAMAAiAH0ALAB7ACIAdAB5AHAAZQAiADoAIgBmAGEAYwBpAGwAaQB0AHkAXwB0AGEAYgAiACwAIgB2AGEAbAB1AGUAIgA6ACIAZgBhAGMAaQBsAGkAdAB5AF8AdABhAGIAXwBsAGkAcwB0ACIAfQBdAA%3D%3D">近くの施設を探す</a>
+            </div>
+          </div>
+          <div class="genre_list_box">
+            <div class="genre_list_box_title">
+              <div class="genre_list_box_title_icon"><i class="icon-025 dentistry"></i></div>
+              <div class="genre_list_box_title_text">歯医者</div>
+            </div>
+            <div class="genre_list_box_text">歯科医院の検索・ネット予約が簡単！口コミや絞り込み​条件が豊富ですぐに希望の医院が見つかります。</div>
+            <div class="genre_list_box_link"><a
+                href="eparkextapp://facility/?deeplinktype=coverall_search&search=WwB7ACIAaQBkACIAOgAyACwAIgB0AGUAeAB0ACIAOgAiAG9rO1MFgCIALAAiAHQAeQBwAGUAIgA6ACIAZwBlAG4AcgBlACIALAAiAGcAZQBuAHIAZQAiADoAMgB9ACwAewAiAHQAeQBwAGUAIgA6ACIAbQB5AHAAbwBzAGkAdABpAG8AbgAiACwAIgB0AGUAeAB0ACIAOgAiAP5zKFcwVyIALAAiAGwAYQB0AGkAdAB1AGQAZQAiADoAIgAzADUALgA2ADQANgA2ADMAMQA1ADAAMAAwADAAIgAsACIAbABvAG4AZwBpAHQAdQBkAGUAIgA6ACIAMQAzADkALgA4ADcAMwA0ADIAMAAyADAAMAAwADAAIgB9ACwAewAiAHQAeQBwAGUAIgA6ACIAZgBhAGMAaQBsAGkAdAB5AF8AdABhAGIAIgAsACIAdgBhAGwAdQBlACIAOgAiAGYAYQBjAGkAbABpAHQAeQBfAHQAYQBiAF8AbABpAHMAdAAiAH0AXQA%3D">近くの施設を探す</a>
+            </div>
+          </div>
+          <div class="genre_list_box">
+            <div class="genre_list_box_title">
+              <div class="genre_list_box_title_icon"><i class="icon-024 medical"></i></div>
+              <div class="genre_list_box_title_text">病院</div>
+            </div>
+            <div class="genre_list_box_text">24時間いつでもネットから受付ができます！<br>空き状況が確認できるのですぐ行ける医院も探せます。</div>
+            <div class="genre_list_box_link"><a
+                href="eparkextapp://facility/?deeplinktype=coverall_search&search=WwB7ACIAaQBkACIAOgAzACwAIgB0AGUAeAB0ACIAOgAiAMV1YpYiACwAIgB0AHkAcABlACIAOgAiAGcAZQBuAHIAZQAiACwAIgBnAGUAbgByAGUAIgA6ADMAfQAsAHsAIgBpAGQAIgA6ACIAbQB5AHAAbwBzAGkAdABpAG8AbgAiACwAIgB0AGUAeAB0ACIAOgAiAP5zKFcwVyIALAAiAHQAeQBwAGUAIgA6ACIAbQB5AHAAbwBzAGkAdABpAG8AbgAiACwAIgBsAGEAdABpAHQAdQBkAGUAIgA6ACIAMwA1AC4ANgA0ADYANgAzADEANQAwADAAMAAwACIALAAiAGwAbwBuAGcAaQB0AHUAZABlACIAOgAiADEAMwA5AC4AOAA3ADMANAAyADAAMgAwADAAMAAwACIAfQAsAHsAIgB0AHkAcABlACIAOgAiAGYAYQBjAGkAbABpAHQAeQBfAHQAYQBiACIALAAiAHYAYQBsAHUAZQAiADoAIgBmAGEAYwBpAGwAaQB0AHkAXwB0AGEAYgBfAGwAaQBzAHQAIgB9AF0A">近くの施設を探す</a>
+            </div>
+          </div>
+          <div class="genre_list_box">
+            <div class="genre_list_box_title">
+              <div class="genre_list_box_title_icon"><i class="icon-026 pharmacy"></i></div>
+              <div class="genre_list_box_title_text">薬局</div>
+            </div>
+            <div class="genre_list_box_text">処方せんの写真をスマホで撮って送るだけ！<br>好きな時間に待ち時間なしで受け取れます。</div>
+            <div class="genre_list_box_link"><a
+                href="eparkextapp://facility/?deeplinktype=coverall_search&search=WwB7ACIAaQBkACIAOgA0ACwAIgB0AGUAeAB0ACIAOgAiAKyFQFwiACwAIgB0AHkAcABlACIAOgAiAGcAZQBuAHIAZQAiACwAIgBnAGUAbgByAGUAIgA6ADQAfQAsAHsAIgBpAGQAIgA6ACIAbQB5AHAAbwBzAGkAdABpAG8AbgAiACwAIgB0AGUAeAB0ACIAOgAiAP5zKFcwVyIALAAiAHQAeQBwAGUAIgA6ACIAbQB5AHAAbwBzAGkAdABpAG8AbgAiACwAIgBsAGEAdABpAHQAdQBkAGUAIgA6ACIAMwA1AC4ANgA0ADYANgAzADEANQAwADAAMAAwACIALAAiAGwAbwBuAGcAaQB0AHUAZABlACIAOgAiADEAMwA5AC4AOAA3ADMANAAyADAAMgAwADAAMAAwACIAfQAsAHsAIgB0AHkAcABlACIAOgAiAGYAYQBjAGkAbABpAHQAeQBfAHQAYQBiACIALAAiAHYAYQBsAHUAZQAiADoAIgBmAGEAYwBpAGwAaQB0AHkAXwB0AGEAYgBfAGwAaQBzAHQAIgB9AF0A">近くの施設を探す</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

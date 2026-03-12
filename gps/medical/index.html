@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta name="robots" content="noindex,nofollow">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <script>
+    $(function () {
+      const GPS_ERROR_URL = "/search/gps_list/back/";
+      $(document).ready(async function () {
+        var queryString = document.location.search;
+        queryString = queryString.replace(/\?/,'&');
+        await getPosition().then(param => {
+          let searchUrl = "/search/gps/list?genre_id=20000" + queryString + "&radius=0.8&" + param;
+          location.href = searchUrl;
+        });
+      });
+      function getPosition() {
+        if (!navigator.geolocation) {
+          location.href = GPS_ERROR_URL;
+          return Promise.resolve();
+        }
+        return new Promise((resolve, reject) => {
+          // 現在地を取得
+          navigator.geolocation.getCurrentPosition(
+            // 取得成功した場合
+            (position) => {
+              var lon = position.coords.longitude;
+              var lat = position.coords.latitude;
+              var result = `position=${lat},${lon}`;
+              resolve(result);
+            },
+            // 取得失敗した場合
+            (error) => {
+              location.href = GPS_ERROR_URL;
+            },
+            {
+              timeout: 1000 * 60 * 5,
+              enableHighAccuracy: true
+            });
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+
+<head>
+  <meta http-equiv="Last-Modified" content="Tue, 22 Nov 2022 10:25:57 GMT">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function (html) { html.className = html.className.replace(/\bno-js\b/, 'js') })(document.documentElement);</script>
+  <title>【12日･21日限定！】わんにゃんの日割</title>
+  <meta name='robots' content='noindex,follow' />
+  <link rel='stylesheet' id='twentysixteen-fonts-css' href='https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+  <link rel='stylesheet' id='genericons-css' href="./assets/css/genericons.css?ver=3.4.1" type='text/css' media='all' />
+  <link rel='stylesheet' id='twentysixteen-style-css' href="./assets/css/style.css?ver=4.5.28" type='text/css' media='all' />
+  <!--[if lt IE 10]>
+<link rel='stylesheet' id='twentysixteen-ie-css'  href="https://app-info.epark.jp/wp-content/themes/epark_theme/css/ie.css?ver=20150930" type='text/css' media='all' />
+<![endif]-->
+  <!--[if lt IE 9]>
+<link rel='stylesheet' id='twentysixteen-ie8-css'  href="https://app-info.epark.jp/wp-content/themes/epark_theme/css/ie8.css?ver=20151230" type='text/css' media='all' />
+<![endif]-->
+  <!--[if lt IE 8]>
+<link rel='stylesheet' id='twentysixteen-ie7-css'  href="https://app-info.epark.jp/wp-content/themes/epark_theme/css/ie7.css?ver=20150930" type='text/css' media='all' />
+<![endif]-->
+  <!--[if lt IE 9]>
+<script type='text/javascript' src="https://app-info.epark.jp/wp-content/themes/epark_theme/js/html5.js?ver=3.7.3"></script>
+<![endif]-->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- <script type='text/javascript' src="https://app-info.epark.jp/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script> -->
+  <script type='text/javascript' src="./assets/js/jquery-migrate.min.js?ver=1.4.1"></script>
+  <link rel="canonical" href="https://epark.jp/docs/pet/wannyan/" />
+</head>
+
+<body class="single single-post postid-10043 single-format-standard no-sidebar">
+  <script>
+    $(function () {
+      $(".js-geolocation").click(async function (e) {
+        e.preventDefault();
+        var middle_categories = $(this).data("middle_categories");
+        await getPosition().then(param => {
+          let searchUrl = "/search/gps/list?genre_id=30000&middle_categories=" + middle_categories + "&" + param + "&" + "radius=" + 0.8;
+          location.href = searchUrl;
+        });
+      });
+
+      function getPosition() {
+        const GPS_ERROR_URL = "/search/gps_list/back/";
+        if (!navigator.geolocation) {
+          location.href = GPS_ERROR_URL;
+          return Promise.resolve();
+        }
+        return new Promise((resolve, reject) => {
+          // 現在地を取得
+          navigator.geolocation.getCurrentPosition(
+            // 取得成功した場合
+            (position) => {
+              var lon = position.coords.longitude;
+              var lat = position.coords.latitude;
+              var result = `position=${lat},${lon}`;
+              resolve(result);
+            },
+            // 取得失敗した場合
+            (error) => {
+              location.href = GPS_ERROR_URL;
+            },
+            {
+              timeout: 1000 * 60 * 5,
+              enableHighAccuracy: true
+            });
+        });
+      }
+    });
+  </script>
+  <div id="page" class="site">
+    <div class="site-inner">
+      <header class="header">
+        <div class="header_wrap">
+          <h1 class="header_logo">
+            <a href="https://epark.jp/"><img src="./assets/images/svg/logo_EPARK.svg" alt="EPARK 人気施設の予約・順番受付サイト"></a>
+          </h1>
+        </div>
+      </header>
+
+      <div id="content" class="site-content">
+
+        <div id="primary" class="content-area">
+          <main id="main" class="site-main" role="main">
+
+            <article id="post-10043" class="post-10043 post type-post status-publish format-standard hentry category-1">
+              <header class="entry-header">
+                <h1 class="entry-title">【12日･21日限定！】わんにゃんの日割</h1>
+                <div>
+                  <span class="posted-on"><span class="screen-reader-text">投稿日: </span><time class="entry-date published" datetime="2022-11-16T13:37:01+00:00">2022年11月16日</time><time class="updated" datetime="2022-11-21T09:57:18+00:00">2022年11月21日</time></span> </div>
+              </header><!-- .entry-header -->
+
+              <div class="entry-content">
+                <p><img class="aligncenter size-full wp-image-8834" src="./assets/images/mv.jpg" alt="毎月12・21日はわんにゃんの日割" width="750" height="270" /></p>
+                <p>いつもEPARKをご利用いただきありがとうございます。</p>
+                <p>毎月12日･21日限定！<br />
+                  動物病院とトリミングサロンの利用がお得になるキャンペーンを実施中です！</p>
+                <hr />
+                <p><img class="aligncenter size-full wp-image-3795" src="./assets/images/011.png" alt="01" width="745" height="186" srcset="./assets/images/011.png 745w, ./assets/images/011-300x75.png 300w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px" /><img class="aligncenter size-medium wp-image-3857" src="./assets/images/20-300x114.png" alt="20" width="300" height="114" srcset="./assets/images/20-300x114.png 300w, ./assets/images/20.png 304w" sizes="(max-width: 300px) 85vw, 300px" /></p>
+                <p style="text-align: center;"><span style="text-decoration: underline;"><span style="color: #800000; text-decoration: underline;"><strong>Amazonギフト券2,000円分がもらえる</strong></span></span><br />
+                  シャンプーカットで6,000円支払っても、2,000円分もらえたら実質4,000円。約30％OFF！</p>
+                <p><img class="aligncenter size-full wp-image-3862" src="./assets/images/25.png" alt="25" width="512" height="244" srcset="./assets/images/25.png 512w, ./assets/images/25-300x143.png 300w" sizes="(max-width: 512px) 85vw, 512px" /><img class="aligncenter size-medium wp-image-3858" src="./assets/images/21-300x99.png" alt="21" width="300" height="99" srcset="./assets/images/21-300x99.png 300w, ./assets/images/21.png 326w" sizes="(max-width: 300px) 85vw, 300px" /></p>
+                <p style="text-align: center;"><strong><span style="text-decoration: underline;"><span style="color: #800000; text-decoration: underline;">サロンはもちろん、動物病院も対象！</span></span></strong><br />
+                  「初めての病院を試したい、セカンドオピニオンで行きたい…でも初診料がもったいない」と感じるときや、歯石とり・健康診断・ワクチンなどの予防ケアをしたいときなど、ぜひご活用ください。</p>
+                <p style="text-align: center;"><img class="aligncenter size-medium wp-image-3859" src="./assets/images/23-300x106.png" alt="23" width="300" height="106" srcset="./assets/images/23-300x106.png 300w, ./assets/images/23.png 303w" sizes="(max-width: 300px) 85vw, 300px" /></p>
+                <p style="text-align: center;"><span style="text-decoration: underline; color: #800000;"><strong>ネットだけじゃなく電話での予約もOK</strong></span><br />
+                  ネット予約未対応の施設も対象なので選べる施設がたくさん。他のキャンペーンで諦めていた施設もわんにゃんならお得に試せます♪</p>
+                <hr />
+                <p style="text-align: center;"><img class="aligncenter size-full wp-image-3791" src="./assets/images/05.png" alt="05" width="334" height="384" srcset="./assets/images/05.png 334w, ./assets/images/05-261x300.png 261w" sizes="(max-width: 334px) 85vw, 334px" /><img class="aligncenter size-full wp-image-3792" src="./assets/images/06.png" alt="06" width="296" height="299" /><img class="aligncenter size-full wp-image-3794" src="./assets/images/07.png" alt="07" width="323" height="323" srcset="./assets/images/07.png 323w, ./assets/images/07-150x150.png 150w, ./assets/images/07-300x300.png 300w" sizes="(max-width: 323px) 85vw, 323px" /></p>
+                <hr />
+                <pre style="text-align: center;"><strong><span style="color: #3366ff;">ご利用の流れ</span></strong></pre>
+                <h5 style="text-align: center;"><strong>◆STEP1◆</strong></h5>
+                <p style="text-align: left;">①12日または21日にEPARKペットライフ（<a href="https://petlife.asia/?SITE_CODE=pet09" target="_blank">https://petlife.asia/</a>）またはEPARKアプリまたはEPARK（<a href="https://epark.jp/" target="_blank">epark.jp</a>）より<span style="color: #ff0000;"><strong><span class="emphasize">初めて利用する</span></strong></span>動物病院・トリミングサロンを「ネット受付ボタン」か「無料電話 電話受付ボタン」から予約。<br />
+                  （ネットの場合は12日、21日中に仮予約していただければOKです。予約確定が翌日などになりましても対象となります。）<br />
+                  ②来店する日は、12日・21日以降、翌月末まででOKです。<br />
+                  <span style="color: #ff0000;"><span class="caution">※EPARKペットライフのご利用に関わらず、初めて訪れる施設に限ります。<br />
+                    </span><span class="caution">※利用料金 5,500円（税込）以上が対象。</span><span class="caution">トリミングに、オプションやグッズ購入などを組み合わせていただいて大丈夫です。また動物病院の場合は、初診料なども含め保険適用前の料金が5,500円（税込）以上でしたら対象となります。<br />
+                    </span><span class="caution">※ 電話受付は“無料電話”と記載されているものに限ります。（0066からはじまる電話番号のみ対象）<br />
+                    </span><span class="caution">※ご予約時、非通知にておかけいただきますと予約履歴の確認ができず、キャンペーン対象外となりますのでお気をつけください。</span></span></p>
+                <p style="text-align: center;"><a class="" data-middle_categories="30100" href="/pet/list/cat_30100/"><img class="aligncenter wp-image-10066" src="./assets/images/%E5%8B%95%E7%89%A9%E7%97%85%E9%99%A2%E3%81%8B%E3%82%89%E6%8E%A2%E3%81%99-450x107.png" width="300" height="71" /></a></p>
+                <p style="text-align: center;"><a class="" data-middle_categories="30200" href="/pet/list/cat_30200/"><img class="aligncenter wp-image-10065" src="./assets/images/%E3%83%88%E3%83%AA%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%B5%E3%83%AD%E3%83%B3%E3%81%8B%E3%82%89%E6%8E%A2%E3%81%99-450x107.png" width="300" height="71" /></a></p>
+                <h5 style="text-align: center;">◆STEP２◆</h5>
+                <p style="text-align: left;">受付した日に来店、お会計。<br />
+                  <span class="caution" style="color: #ff0000;">※申請時にレシートが必要となります。必ずお受け取りください。</span></p>
+                <h5 style="text-align: center;">◆STEP３◆</h5>
+                <p style="text-align: left;">3日以内にEPARKペットライフ（<a href="https://petlife.asia/?SITE_CODE=pet09" target="_blank">https://petlife.asia/</a>）の施設詳細ページ「クチコミ」欄よりクチコミを投稿。(150文字以上)<br />
+                  <span style="color: #ff0000;"><span class="caution">※3日以内に投稿の確認ができなかった場合、対象外となる場合がございます。</span><br />
+                  </span></p>
+                <h5 style="text-align: center;">◆STEP４◆</h5>
+                <p style="text-align: left;">翌月末までに、<a href="https://petlife.asia/sp/login/enqueteEdit/index/EnqueteId/43?SITE_CODE=pet09">【申請はこちらから】</a>よりレシートの添付、その他必要事項をご入力のうえ申請してください。<br />
+                  <span class="caution" style="color: #ff0000;">※メールアドレス、電話番号の記入間違いにご注意ください。</span></p>
+                <h5 style="text-align: center;">◆STEP５◆</h5>
+                <p style="text-align: left;">Amazon ギフト券をEメールにて送付いたします。</p>
+                <p style="text-align: left;"><strong><u>発送先</u></strong><br />
+                  申請時に登録されていた会員メールアドレス<br />
+                  <span class="caution" style="color: #ff0000;">※メールの受け取りができなかった場合、再送等はいたしかねます。<br />
+                  </span><b><u>発送予定日</u></b><br />
+                  1日～15日までに申請•••申請した月の下旬に付与<br />
+                  16日～月末までに申請•••申請した翌月の中旬に付与<br />
+                  例：3月5日に申請 → 3月下旬付与<br />
+                  3月20日に申請 → 4月中旬付与</p>
+                <hr />
+                <p style="text-align: center;"><img class="aligncenter size-full wp-image-3801" src="./assets/images/11.png" alt="11" width="358" height="302" srcset="./assets/images/11.png 358w, ./assets/images/11-300x253.png 300w" sizes="(max-width: 358px) 85vw, 358px" /></p>
+                <hr />
+                <p style="text-align: center;">さっそく動物病院・トリミングサロンをおトクに予約しよう♪</p>
+                <p style="text-align: center;"><a class="" data-middle_categories="30100" href="/pet/list/cat_30100/"><img class="aligncenter wp-image-10066" src="./assets/images/%E5%8B%95%E7%89%A9%E7%97%85%E9%99%A2%E3%81%8B%E3%82%89%E6%8E%A2%E3%81%99-450x107.png" width="300" height="71" /></a></p>
+                <p style="text-align: center;"><a class="" data-middle_categories="30200" href="/pet/list/cat_30200/"><img class="aligncenter wp-image-10065" src="./assets/images/%E3%83%88%E3%83%AA%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%B5%E3%83%AD%E3%83%B3%E3%81%8B%E3%82%89%E6%8E%A2%E3%81%99-450x107.png" width="300" height="71" /></a></p>
+                <p style="text-align: center;"><a href="https://petlife.asia/sp/login/enqueteEdit/index/EnqueteId/43?SITE_CODE=pet09"><img class="aligncenter wp-image-3805 size-medium" src="./assets/images/14-300x69.png" alt="14" width="300" height="69" srcset="./assets/images/14-300x69.png 300w, ./assets/images/14.png 678w" sizes="(max-width: 300px) 85vw, 300px" /></a></p>
+                <hr />
+                <hr />
+                <h5 style="text-align: left;">►よくある質問</h5>
+                <p style="text-align: left;"><span style="color: #33cccc;"><label for="label1">Q 多頭飼いの場合は1頭ずつ適用でしょうか？それとも1アカウントごとの適用でしょうか？<br />
+                    </label></span>A 多頭飼いの場合は、1頭ずつご予約いただけましたらどちらもキャンペーン対象とさせていただきます。同一施設の同じ日でも大丈夫です。時間をずらして1頭ずつご予約くださいませ。<br />
+                  また申請につきましても、1頭ずつにてお願いいたします。</p>
+                <p style="text-align: left;"><span style="color: #33cccc;"><label class="bo-top1" for="label2">Q 施設さま独自の割引と併用はできますでしょうか？<br />
+                    </label></span>A 施設さま独自の割引と基本的には併用可能ですが、5,500円(税込)を下回ってしまった場合は対象外となります。ご注意ください。</p>
+                <p style="text-align: left;"><span style="color: #33cccc;"><label class="bo-top1" for="label3">Q 以前キャンペーンを利用したのですが、再度利用することはできますでしょうか？<br />
+                    </label></span>A 以前キャンペーンをご利用いただいていても、新たに初めて利用する施設さまをご予約いただいた場合は対象となります。</p>
+                <p style="text-align: left;"><span style="color: #33cccc;"><label class="bo-top1" for="label4">Q 後日予約日を変更しても、キャンペーン適用となりますでしょうか？<br />
+                    </label></span>A 12日か21日中に初回のご予約手続きを済ませていただいておりましたら、後日ご予約した来店日を変更しても対象となります。ただし翌月末までにはご来店くださいませ。</p>
+                <p style="text-align: left;"><span style="color: #33cccc;"><label class="bo-top1" for="label5">Q 事前予約ではなく順番予約(当日順番待ち)の場合も、わんにゃんの日割の対象になるのでしょうか？<br />
+                    </label></span>A はい、対象でございます。</p>
+                <hr />
+                <h5 style="text-align: left;"><span style="text-decoration: underline;">►注意事項</span></h5>
+                <ul class="warning_list max900" style="text-align: left;">
+                  <li>他キャンペーンとの併用は不可です。</li>
+                  <li>不正とみなされるような行為があった場合は、キャンペーンの対象外とします。</li>
+                  <li>予約の無断キャンセルや、キャンセルの繰り返しなどの迷惑行為があった場合、キャンペーンの対象外となりますのでご注意ください。</li>
+                  <li>お一人さま1アカウントまでとさせていただいております。複数アカウント発行による特典の不正取得などが発覚した場合には、強制退会および賠償請求など厳しい処置をとらせていただきます。</li>
+                  <li>本キャンペーンは、予告なく変更・中止・終了とすることがあります。</li>
+                  <li>本キャンペーン参加者の個人情報は、Amazon ギフト券送付のために使用いたします。</li>
+                  <li>Amazon ギフト券の返品・交換はできません。</li>
+                </ul>
+                <hr />
+                <h5 style="text-align: left;"><span style="text-decoration: underline;">►プレゼントについて</span></h5>
+                <p style="text-align: left;"><b>Amazon ギフト券2,000円分（Eメールでお届け）</b></p>
+                <p style="text-align: left;">本プロモーションは、株式会社EPARKによる提供です。本キャンペーンについてのお問い合わせはAmazonではお受けしておりません。<br />
+                  <a href="mailto:cp@e-petlife.co.jp?subject=EPARK%E4%BC%9A%E5%93%A1%E6%A7%98%E9%99%90%E5%AE%9A%EF%BC%81%E6%AF%8E%E6%9C%8812%E3%83%BB21%E6%97%A5%E3%81%AF%E3%82%8F%E3%82%93%E3%81%AB%E3%82%83%E3%82%93%E3%81%AE%E6%97%A5%E5%89%B2%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">&gt; お問い合わせはこちら</a><br />
+                  Amazon、Amazon.co.jpおよびそれらのロゴはAmazon.incまたは関連会社の商標です。Amazon ギフト券細則は<a href="https://amazon.co.jp/giftcard/tc" target="_blank">https://amazon.co.jp/giftcard/tc</a>をご確認ください。</p>
+                <p style="text-align: center;"><a href="https://petlife.asia/sp/login/enqueteEdit/index/EnqueteId/43?SITE_CODE=pet09"><img class="aligncenter wp-image-3805 size-medium" src="./assets/images/14-300x69.png" alt="14" width="300" height="69" srcset="./assets/images/14-300x69.png 300w, ./assets/images/14.png 678w" sizes="(max-width: 300px) 85vw, 300px" /></a></p>
+                <hr />
+                <h5 style="text-align: left;"><span style="text-decoration: underline;">►お問い合わせ</span></h5>
+                <p style="text-align: left;">本キャンペーンについてのご質問は下記「お問い合わせはこちら」リンクから、株式会社EPARKペットライフへお願いいたします。</p>
+                <p class="form_btn" style="text-align: center;"><a href="mailto:cp@e-petlife.co.jp?subject=%E3%80%90Amazon%E3%82%AE%E3%83%95%E3%83%88%E5%88%B82000%E5%86%86%E5%88%86%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88%E3%80%91%E6%AF%8E%E6%9C%8812%E6%97%A5%E3%83%BB21%E6%97%A5%E3%81%AE%E3%82%8F%E3%82%93%E3%81%AB%E3%82%83%E3%82%93%E3%81%AE%E6%97%A5%E5%89%B2%E3%81%A7%E3%81%8A%E5%BE%97%E3%81%AB%E3%83%88%E3%83%AA%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%92%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">お問い合わせはこちら＞＞</a></p>
+                <p style="text-align: left;"><span class="caution pc_center" style="color: #ff0000;">※動物病院･ペットサロンへのお問い合わせはご遠慮くださいますようお願いいたします。</span></p>
+                <p style="text-align: left;">お問い合わせの内容により対応にお時間をいただくことがございます。<br />
+                  土日祝日を除く2日以内に対応いたします。あらかじめご了承ください。<br />
+                  営業時間：10:00～18:00（土・日・祝日を除く）</p>
+                <p style="text-align: left;">[20200630hk782]</p>
+              </div><!-- .entry-content -->
+
+            </article><!-- #post-## -->
+          </main><!-- .site-main -->
+
+        </div><!-- .content-area -->
+
+      </div><!-- .site-content -->
+
+      <footer class="footer">
+        <div class="footer_wrap">
+          <ul>
+            <li><a href="https://epark.co.jp/corporate/outline/" target="_blank">運営会社</a></li>
+            <li><a href="https://www.epark.jp/terms/" target="_blank">会員規約</a></li>
+            <li><a href="https://www.epark.jp/use_terms/" target="_blank">利用規約</a></li>
+            <li><a href="https://epark.co.jp/privacy/" target="_blank">プライバシーポリシー</a></li>
+          </ul>
+          <div id="copyright">
+            <div class="wrapper">
+              <p>© 2001-
+                <script type="text/javascript">myDate = new Date(); myYear = myDate.getFullYear(); document.write(myYear);</script> EPARK, inc.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div><!-- .site-inner -->
+  </div><!-- .site -->
+
+  <script type='text/javascript' src="./assets/js/skip-link-focus-fix.js?ver=20151112"></script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var screenReaderText = { "expand": "\u30b5\u30d6\u30e1\u30cb\u30e5\u30fc\u3092\u5c55\u958b", "collapse": "\u30b5\u30d6\u30e1\u30cb\u30e5\u30fc\u3092\u9589\u3058\u308b" };
+/* ]]> */
+  </script>
+  <!-- <script type='text/javascript' src="./assets/js/functions.js?ver=20151204"></script> -->
+  <script type='text/javascript' src="./assets/js/wp-embed.min.js?ver=4.5.28"></script>
+</body>
+
+</html>

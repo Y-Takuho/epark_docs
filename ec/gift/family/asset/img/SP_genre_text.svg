@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="321" height="65" viewBox="0 0 321 65">
+  <defs>
+    <style>
+.a{fill:#fff;stroke:#158ecc;stroke-width:4px;}.b{fill:#158ecc;font-size:26px;font-family:NotoSansJP-Bold, Noto Sans JP, sans-serif;font-weight:700;letter-spacing:0.05em;}.c{stroke:none;}.d{fill:none;}
+</style>
+  </defs>
+  <g transform="translate(3255 -2656)">
+    <g class="a" transform="translate(-3248 2663)">
+      <rect class="c" width="314" height="58"/>
+      <rect class="d" x="2" y="2" width="310" height="54"/>
+    </g>
+    <g class="a" transform="translate(-3255 2656)">
+      <rect class="c" width="314" height="58"/>
+      <rect class="d" x="2" y="2" width="310" height="54"/>
+    </g>
+    <text class="b" transform="translate(-3251 2665.666)">
+      <tspan x="45.1" y="30">ジャンルから選ぶ</tspan>
+    </text>
+  </g>
+</svg>

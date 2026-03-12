@@ -1,0 +1,19 @@
+/* ----- product_id, product_riraku_id ----- */
+
+#product_id,
+#product_riraku_id {
+  width: 89%;
+  margin: auto;
+}
+
+#product_riraku_id {
+  margin-top: 30px;
+}
+#product_riraku_id .item_wrap .item a .item_info_wrap .price .campaign_price {
+  margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+  #product_riraku_id .item_wrap .item {
+    width: 33%;
+  }
+}

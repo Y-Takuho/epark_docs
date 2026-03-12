@@ -1,0 +1,14 @@
+/*
+EPARK Landing Pages
+v0.0.1
+Last Updated: 2023-12-21
+Author: Takuho Yamada (Takuho.Yamada@epark.co.jp)
+*/
+// ページのレイアウトファイルを読み込み
+@use "layout/_custom.scss";
+@use "layout/_lp.scss";
+//事業部ごとのインポートファイル
+@use "themes/_relax_product.scss";
+@use "themes/_gift_product.scss";
+// reset.cssを読み込み
+@use "base/_reset.scss";

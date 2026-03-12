@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="296" height="141" viewBox="0 0 296 141">
+  <defs>
+    <style>
+.a{fill:#fff;stroke:#158ecc;stroke-width:4px;}.b{fill:#158ecc;font-size:26px;font-family:NotoSansJP-Bold, 'Noto Sans JP', sans-serif;letter-spacing:0.05em;font-weight:700;}.c{font-family:NotoSansJP-Regular, 'Noto Sans JP', sans-serif;font-weight:400;}.d{stroke:none;}.e{fill:none;}
+</style>
+  </defs>
+  <g transform="translate(3371 -776)">
+    <g transform="translate(-3371 776)">
+      <g class="a" transform="translate(8 7)">
+        <rect class="d" width="288" height="134"/>
+        <rect class="e" x="2" y="2" width="284" height="130"/>
+      </g>
+      <g class="a">
+        <rect class="d" width="288" height="134"/>
+        <rect class="e" x="2" y="2" width="284" height="130"/>
+      </g>
+    </g>
+    <text class="b" transform="translate(-3367 792)">
+      <tspan x="31.45" y="30">家族お祝い割限定</tspan>
+      <tspan class="c">
+        <tspan x="17.8" y="62">初回利用クーポンの</tspan>
+        <tspan x="99.7" y="94">使い方</tspan>
+      </tspan>
+    </text>
+  </g>
+</svg>

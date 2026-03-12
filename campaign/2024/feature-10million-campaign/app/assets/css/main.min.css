@@ -1,0 +1,40 @@
+/*
+Error: Invalid US-ASCII character "\xE3"
+        on line 7 of assets/sass/main.scss
+
+2: EPARK Landing Pages
+3: v0.0.1
+4: Last Updated: 2023-12-21
+5: Author: Takuho Yamada (Takuho.Yamada@epark.co.jp)
+6: *\/
+7: // ページのレイアウトファイルを読み込み
+8: @use "layout/_custom.scss";
+9: @use "layout/_lp.scss";
+10: //事業部ごとのインポートファイル
+11: @use "themes/_relax_product.scss";
+12: @use "themes/_gift_product.scss";
+
+Backtrace:
+assets/sass/main.scss:7
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/util.rb:1090:in `rescue in block in find_encoding_error'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/util.rb:1087:in `block in find_encoding_error'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/util.rb:1086:in `each'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/util.rb:1086:in `each_with_index'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/util.rb:1086:in `find_encoding_error'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/util.rb:814:in `check_sass_encoding'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:444:in `check_encoding!'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:400:in `_to_tree'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Users/owner/.frum/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+../../../../../../../../usr/local/bin/sass:25:in `load'
+../../../../../../../../usr/local/bin/sass:25:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid US-ASCII character \"\xE3\"\A         on line 7 of assets/sass/main.scss\A \A 2: EPARK Landing Pages\A 3: v0.0.1\A 4: Last Updated: 2023-12-21\A 5: Author: Takuho Yamada (Takuho.Yamada@epark.co.jp)\A 6: */\A 7: // ページのレイアウトファイルを読み込み\A 8: @use \"layout/_custom.scss\";\A 9: @use \"layout/_lp.scss\";\A 10: //事業部ごとのインポートファイル\A 11: @use \"themes/_relax_product.scss\";\A 12: @use \"themes/_gift_product.scss\";"; }
